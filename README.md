@@ -1,1 +1,1 @@
-# cs-interview-preparation
+# CS Algorithms
