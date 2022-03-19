@@ -1,7 +1,7 @@
 # CS Interview Preparation Cheat Sheet
 
-##Bitwise operations
-###Operators
+## Bitwise operations
+### Operators
 ```
 AND                   &
 OR                    |
@@ -12,7 +12,7 @@ Signed right shift    >>
 Unsigned right shift  >>>
 ```
 
-###Truth table
+### Truth table
 ```
 AND       OR        NOT     XOR  
 0 0 | 0   0 0 | 0   0 | 1   0 0 | 0
@@ -21,7 +21,7 @@ AND       OR        NOT     XOR
 1 1 | 1   1 1 | 1           1 1 | 0
 ```
 
-###Shifting
+### Shifting
 ```
 // Left shifting (always fills with 0)
 01010 << 1 => 010100
@@ -81,7 +81,7 @@ x = 11101010
 00010110
 ```
 
-####Subtract 17 from 23, as a computer would, using binary code
+#### Subtract 17 from 23, as a computer would, using binary code
 Given a register of size 6, 23 – 17 = 23 + (-17) becomes 0001 0111 + 1110 1111 = 10000 0110.\
 Since this result has 9 bits, which is too large for the register chosen, the leftmost bit is truncated, resulting in the binary representation of the positive (it starts with a 0) integer 0000 0110.\
 When this is changed to a decimal number, note that 4 + 2 = 6 which is the answer expected.
