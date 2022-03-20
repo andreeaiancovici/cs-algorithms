@@ -1,4 +1,4 @@
-# CS Interview Preparation Cheat Sheet
+# CS Algorithms Cheat Sheet
 
 ## Bitwise operations
 ### Operators
@@ -90,8 +90,19 @@ When this is changed to a decimal number, note that 4 + 2 = 6 which is the answe
 A register of size N will be able to represent decimal integers between -2^(N-1) and +2^(N-1).  
 **To-do**: Update after finishing `Computer systems; A programmer's perspective`
 
+### Problem solving patterns
 
+#### XOR
+- returns zero if we take XOR of two same numbers; 
+- returns the same number if we XOR with zero.
 
+##### Problems:
+- [FindMissingNumber](/src/main/java/bitwise/FindMissingNumber.java)
+- [SingleNumber](/src/main/java/bitwise/SingleNumber.java)
+- [TwoSingleNumbers](/src/main/java/bitwise/TwoSingleNumbers.java)
+- [ComplementOfBase10Number](/src/main/java/bitwise/ComplementOfBase10Number.java)
+
+##### LeetCode
 
 
 
