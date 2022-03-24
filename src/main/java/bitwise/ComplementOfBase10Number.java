@@ -1,8 +1,5 @@
 package bitwise;
 
-import java.util.Arrays;
-import java.util.List;
-
 import static org.junit.Assert.assertEquals;
 
 /**
@@ -15,17 +12,35 @@ import static org.junit.Assert.assertEquals;
  * For a given positive number N in base-10, return the complement of its binary representation as a base-10 integer.
  * ---
  * Solution:
+ * Consider number N and its complement M.
+ * N ^ M => results in a bit mask having all bits set to 1 and length equal to the left-most set bit between the 2 numbers
+ * M = N ^ BIT_MASK, because XOR-ing a number with itself result 0, and XOR-ing a number with zero results itself
  * ---
- * Time Complexity:
- * Space Complexity:
+ * Time Complexity: O(1)
+ * Space Complexity: O(1)
  */
 public class ComplementOfBase10Number {
 
     public static void main(String[] args) {
-        assertEquals(Arrays.asList(4, 6), complementOfBase10Number(Arrays.asList(1, 4, 2, 1, 3, 5, 6, 2, 3, 5)));
+        assertEquals(7, complementOfBase10Number(8));
+        assertEquals(5, complementOfBase10Number(10));
     }
 
-    private static int complementOfBase10Number(List<Integer> arr) {
-        return 0;
+    private static int complementOfBase10Number(int n) {
+        if(n == 0) {
+            return 1;
+        }
+
+        // Compute bitmask of 1
+        int bitMask = n;
+        bitMask |= bitMask >> 1;
+        bitMask |= bitMask >> 2;
+        bitMask |= bitMask >> 4;
+        bitMask |= bitMask >> 8;
+        bitMask |= bitMask >> 16;
+
+        // Extract the complement
+        // BIT_MASK contains the number n XOR-ed with its complement
+        return n ^ bitMask;
     }
 }
