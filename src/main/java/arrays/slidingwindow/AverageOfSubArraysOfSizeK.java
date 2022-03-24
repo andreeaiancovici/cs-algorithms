@@ -27,9 +27,9 @@ public class AverageOfSubArraysOfSizeK {
         List<Double> averages = new ArrayList<>();
 
         int windowStart = 0, sum = 0;
-        for(int windowEnd = 0; windowEnd < array.size(); windowEnd++) {
+        for (int windowEnd = 0; windowEnd < array.size(); windowEnd++) {
             sum += array.get(windowEnd);
-            if(windowEnd - windowStart == k - 1) {
+            if (windowEnd - windowStart == k - 1) {
                 averages.add(((double) sum) / k);
                 sum -= array.get(windowStart);
                 windowStart++;

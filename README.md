@@ -129,6 +129,7 @@ How to identify when a problem might require this solution pattern:
 ##### Problems:
 - [AverageOfSubArraysOfSizeK](/src/main/java/arrays/slidingwindow/AverageOfSubArraysOfSizeK.java)
 - [MaximumSumSubArrayOfSizeK](/src/main/java/arrays/slidingwindow/MaximumSumSubArrayOfSizeK.java)
+- [SmallestSubArrayWithGivenSum](/src/main/java/arrays/slidingwindow/SmallestSubArrayWithGivenSum.java)
 
 ##### LeetCode
 https://leetcode.com/problemset/all/?topicSlugs=sliding-window

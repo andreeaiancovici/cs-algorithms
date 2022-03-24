@@ -26,9 +26,9 @@ public class MaximumSumSubArrayOfSizeK {
     private static int maximumSumSubArrayOfSizeK(List<Integer> array, int k) {
         int windowStart = 0, sum = 0, maxSum = 0;
 
-        for(int windowEnd = 0; windowEnd < array.size(); windowEnd++) {
+        for (int windowEnd = 0; windowEnd < array.size(); windowEnd++) {
             sum += array.get(windowEnd);
-            if(windowEnd - windowStart == k - 1) {
+            if (windowEnd - windowStart == k - 1) {
                 maxSum = Math.max(maxSum, sum);
                 sum -= array.get(windowStart);
                 windowStart++;
