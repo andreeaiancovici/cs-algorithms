@@ -67,6 +67,18 @@ The following example shows how you can use `|` operator to compute a number in 
 x = (1 << 4) | (1 << 3) | (1 << 2) | 1
 ```
 
+### Convert Integer to Hexadecimal
+```
+char[] hexMap = new char[]{'0','1','2','3','4','5','6','7','8','9','a','b','c','d','e','f'};
+
+// Keep a map with indexes from 0 to 15, for hex base characters
+// Isolate last 4 bits, applying a mask of 15 (1111 as binary)
+while(num != 0) {
+    // Extract hex character using hexMap[num & 15]
+    num = num >>> 4;
+}
+```
+
 ### Two's Complement
 The two's complement of an N-bit number is defined as its complement with respect to 2^N; the sum of a number and its two's complement is 2^N.
 The two's complement is used for representing negative numbers from decimal base in binary form.
@@ -101,9 +113,14 @@ A register of size N will be able to represent decimal integers between -2^(N-1)
 - [SingleNumber](/src/main/java/bitwise/SingleNumber.java)
 - [TwoSingleNumbers](/src/main/java/bitwise/TwoSingleNumbers.java)
 - [ComplementOfBase10Number](/src/main/java/bitwise/ComplementOfBase10Number.java)
+- [FlipMatrix](/src/main/java/bitwise/FlipMatrix.java)
 
 ##### LeetCode
 
+https://leetcode.com/problemset/all/?topicSlugs=bit-manipulation \
+https://leetcode.com/problemset/all/?topicSlugs=bitmask
 
+## LeetCode
 
-
+https://leetcode.com/problem-list/top-interview-questions/ \
+https://seanprashad.com/leetcode-patterns/
