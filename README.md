@@ -116,9 +116,22 @@ A register of size N will be able to represent decimal integers between -2^(N-1)
 - [FlipMatrix](/src/main/java/bitwise/FlipMatrix.java)
 
 ##### LeetCode
-
 https://leetcode.com/problemset/all/?topicSlugs=bit-manipulation \
 https://leetcode.com/problemset/all/?topicSlugs=bitmask
+
+## Arrays
+
+### Sliding Window
+How to identify when a problem might require this solution pattern:
+- the input is a linear data structure (array, linked list, string);
+- find the longest/shortest substring, sub-array, or a desired value.
+
+##### Problems:
+- [AverageOfSubArraysOfSizeK](/src/main/java/arrays/slidingwindow/AverageOfSubArraysOfSizeK.java)
+- [MaximumSumSubArrayOfSizeK](/src/main/java/arrays/slidingwindow/MaximumSumSubArrayOfSizeK.java)
+
+##### LeetCode
+https://leetcode.com/problemset/all/?topicSlugs=sliding-window
 
 ## LeetCode
 
