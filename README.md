@@ -132,6 +132,7 @@ How to identify when a problem might require this solution pattern:
 - [SmallestSubArrayWithGivenSum](/src/main/java/arrays/slidingwindow/SmallestSubArrayWithGivenSum.java)
 - [LongestSubstringWithKDistinctCharacters](/src/main/java/arrays/slidingwindow/LongestSubstringWithKDistinctCharacters.java)
 - [FruitsIntoBaskets](/src/main/java/arrays/slidingwindow/FruitsIntoBaskets.java)
+- [NoRepeatSubstring](/src/main/java/arrays/slidingwindow/NoRepeatSubstring.java)
 
 ##### LeetCode
 https://leetcode.com/problemset/all/?topicSlugs=sliding-window
