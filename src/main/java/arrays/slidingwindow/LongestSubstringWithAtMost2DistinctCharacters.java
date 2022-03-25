@@ -39,9 +39,9 @@ public class LongestSubstringWithAtMost2DistinctCharacters {
                 windowStart++;
             }
 
-            maxLength = Math.max(maxLength, windowEnd - windowStart);
+            maxLength = Math.max(maxLength, windowEnd - windowStart + 1);
         }
 
-        return maxLength + 1;
+        return maxLength;
     }
 }

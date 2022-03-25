@@ -30,7 +30,7 @@ public class LongestSubstringWithKDistinctCharacters {
             frequencies.merge(s.charAt(windowEnd), 1, Integer::sum);
 
             if (frequencies.size() == K) {
-                maxLength = Math.max(maxLength, windowEnd - windowStart);
+                maxLength = Math.max(maxLength, windowEnd - windowStart + 1);
             } else {
                 while (frequencies.size() > K) {
                     frequencies.merge(s.charAt(windowStart), 1, (prev, value) -> prev - value);
@@ -44,6 +44,6 @@ public class LongestSubstringWithKDistinctCharacters {
             }
         }
 
-        return maxLength + 1;
+        return maxLength;
     }
 }

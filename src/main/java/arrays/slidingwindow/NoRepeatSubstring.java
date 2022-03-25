@@ -41,9 +41,9 @@ public class NoRepeatSubstring {
             }
 
             charToIndex.put(s.charAt(windowEnd), windowEnd);
-            maxLength = Math.max(maxLength, windowEnd - windowStart);
+            maxLength = Math.max(maxLength, windowEnd - windowStart + 1);
         }
 
-        return maxLength + 1;
+        return maxLength;
     }
 }

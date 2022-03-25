@@ -30,11 +30,11 @@ public class SmallestSubArrayWithGivenSum {
         for (int windowEnd = 0; windowEnd < array.size(); windowEnd++) {
             sum += array.get(windowEnd);
             while (sum >= S) {
-                minLength = Math.min(minLength, windowEnd - windowStart);
+                minLength = Math.min(minLength, windowEnd - windowStart + 1);
                 sum -= array.get(windowStart);
                 windowStart++;
             }
         }
-        return minLength + 1;
+        return minLength;
     }
 }
