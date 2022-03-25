@@ -134,6 +134,7 @@ How to identify when a problem might require this solution pattern:
 - [FruitsIntoBaskets](/src/main/java/arrays/slidingwindow/FruitsIntoBaskets.java)
 - [NoRepeatSubstring](/src/main/java/arrays/slidingwindow/NoRepeatSubstring.java)
 - [LongestSubstringWithSameLettersAfterReplacement](/src/main/java/arrays/slidingwindow/LongestSubstringWithSameLettersAfterReplacement.java)
+- [LongestSubArrayWithOnesAfterReplacement](/src/main/java/arrays/slidingwindow/LongestSubArrayWithOnesAfterReplacement.java)
 
 ##### LeetCode
 https://leetcode.com/problemset/all/?topicSlugs=sliding-window
