@@ -11,8 +11,8 @@ import static org.junit.Assert.*;
  * Solution:
  * Sliding Window
  * ---
- * Time Complexity:
- * Space Complexity:
+ * Time Complexity: O(N + M), where N is the size of input string and M is the size of pattern
+ * Space Complexity: O(K), where K is the number of distinct characters in pattern
  */
 public class PermutationInAString {
 
@@ -34,18 +34,18 @@ public class PermutationInAString {
         for (int windowEnd = 0; windowEnd < s.length(); windowEnd++) {
             if (patternFrequencies.containsKey(s.charAt(windowEnd))) {
                 patternFrequencies.merge(s.charAt(windowEnd), 1, (prev, value) -> prev - value);
-                if(patternFrequencies.get(s.charAt(windowEnd)) == 0) {
+                if (patternFrequencies.get(s.charAt(windowEnd)) == 0) {
                     patternMatches++;
                 }
             }
 
-            if(patternMatches == patternFrequencies.size()) {
+            if (patternMatches == patternFrequencies.size()) {
                 return true;
             }
 
-            if(windowEnd - windowStart == pattern.length() - 1) {
+            if (windowEnd - windowStart == pattern.length() - 1) {
                 if (patternFrequencies.containsKey(s.charAt(windowStart))) {
-                    if(patternFrequencies.get(s.charAt(windowStart)) == 0) {
+                    if (patternFrequencies.get(s.charAt(windowStart)) == 0) {
                         patternMatches--;
                     }
                     patternFrequencies.merge(s.charAt(windowStart), 1, Integer::sum);

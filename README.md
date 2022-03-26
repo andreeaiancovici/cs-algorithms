@@ -136,6 +136,7 @@ How to identify when a problem might require this solution pattern:
 - [LongestSubstringWithSameLettersAfterReplacement](/src/main/java/arrays/slidingwindow/LongestSubstringWithSameLettersAfterReplacement.java)
 - [LongestSubArrayWithOnesAfterReplacement](/src/main/java/arrays/slidingwindow/LongestSubArrayWithOnesAfterReplacement.java)
 - [PermutationInAString](/src/main/java/arrays/slidingwindow/PermutationInAString.java)
+- [StringAnagrams](/src/main/java/arrays/slidingwindow/StringAnagrams.java)
 
 ##### LeetCode
 https://leetcode.com/problemset/all/?topicSlugs=sliding-window
