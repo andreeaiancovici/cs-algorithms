@@ -124,7 +124,32 @@ https://leetcode.com/problemset/all/?topicSlugs=bitmask
 ### Sliding Window
 How to identify when a problem might require this solution pattern:
 - the input is a linear data structure (array, linked list, string);
-- find the longest/shortest substring, sub-array, or a desired value.
+- window size may be:
+  - fixed, which implies finding a computed value from a sub-array / sub-string:
+    - average, maximum sum etc.
+  - dynamic, which implies resizing the sub-array / sub-string as needed:
+    - find the length for:
+        - smallest sub-array / sub-string fulfilling some condition
+        - longest sub-array / sub-string fulfilling some condition
+    - check if string contains permutation pattern
+
+Condition examples for dynamic window:
+- sum;
+- distinct characters
+- characters after replacement
+  
+If sum is required for determining sub-array, notice if array has negative numbers.
+In this case sliding window may not pe applicable.
+    
+```
+int windowStart = 0;
+for(int windowEnd = 0; windowEnd < arraySize; windowEnd++) {
+    
+	while(/*condition if window is still valid*/) {
+		windowStart++;
+	}
+}
+```
 
 ##### Problems:
 - [AverageOfSubArraysOfSizeK](/src/main/java/arrays/slidingwindow/AverageOfSubArraysOfSizeK.java)
