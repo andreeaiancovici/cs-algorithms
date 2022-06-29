@@ -122,24 +122,29 @@ https://leetcode.com/problemset/all/?topicSlugs=bitmask
 ## Arrays
 
 ### Sliding Window
-How to identify when a problem might require this solution pattern:
-- the input is a linear data structure (array, linked list, string);
-- window size may be:
-  - fixed, which implies finding a computed value from a sub-array / sub-string:
-    - average, maximum sum etc.
-  - dynamic, which implies resizing the sub-array / sub-string as needed:
-    - find the length for:
-        - smallest sub-array / sub-string fulfilling some condition
-        - longest sub-array / sub-string fulfilling some condition
-    - check if string contains permutation pattern
 
-Condition examples for dynamic window:
-- sum;
-- distinct characters
-- characters after replacement
+Input:
+- array
+- linked list
+- string
+
+Window size:
+- fixed, of size k
+  - find a computed value from a sub-array of size k -> average, maximum sum etc.
+  - existence of sub-arrays of size k with condition:
+    - no repeated characters / numbers
+    - matching a permutation
+  - no. of sub-arrays of size k matching some condition
+      - average 
+      - sum equals
+      - no repeated characters / numbers
+      - matching permutation
+- dynamic, which implies resizing the sub-array as needed
+  - find the smallest / longest length for sub-array fulfilling some condition
+  - no. of sub-arrays fulfilling some condition
   
-If sum is required for determining sub-array, notice if array has negative numbers.
-In this case sliding window may not pe applicable.
+_NOTE:_ Usually, in order to keep track of element frequencies, we should use a map, because most inputs include repeating elements.
+_NOTE:_ Dynamic size may include character replacements in order to increase / decrease window size.
     
 ```
 int windowStart = 0;
@@ -150,6 +155,9 @@ for(int windowEnd = 0; windowEnd < arraySize; windowEnd++) {
 	}
 }
 ```
+
+Cases when it may not be applicable:
+- negative numbers when sum is required
 
 ##### Problems:
 - [AverageOfSubArraysOfSizeK](/src/main/java/arrays/slidingwindow/AverageOfSubArraysOfSizeK.java)
@@ -162,7 +170,7 @@ for(int windowEnd = 0; windowEnd < arraySize; windowEnd++) {
 - [LongestSubArrayWithOnesAfterReplacement](/src/main/java/arrays/slidingwindow/LongestSubArrayWithOnesAfterReplacement.java)
 - [PermutationInAString](/src/main/java/arrays/slidingwindow/PermutationInAString.java)
 - [StringAnagrams](/src/main/java/arrays/slidingwindow/StringAnagrams.java)
-- [TBD][SmallestWindowContainingSubstring](/src/main/java/arrays/slidingwindow/SmallestWindowContainingSubstring.java)
+- [SmallestWindowContainingSubstring](/src/main/java/arrays/slidingwindow/SmallestWindowContainingSubstring.java)
 - [TBD][WordsConcatenation](/src/main/java/arrays/slidingwindow/WordsConcatenation.java)
 
 ##### LeetCode
