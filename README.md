@@ -143,8 +143,8 @@ Window size:
   - find the smallest / longest length for sub-array fulfilling some condition
   - no. of sub-arrays fulfilling some condition
   
-_NOTE:_ Usually, in order to keep track of element frequencies, we should use a map, because most inputs include repeating elements.
-_NOTE:_ Dynamic size may include character replacements in order to increase / decrease window size.
+**NOTE**: Usually, in order to keep track of element frequencies, we should use a map, because most inputs include repeating elements.\
+**NOTE**: Dynamic size may include character replacements in order to increase / decrease window size.
     
 ```
 int windowStart = 0;
