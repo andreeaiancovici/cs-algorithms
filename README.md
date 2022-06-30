@@ -184,6 +184,7 @@ Input:
 
 ##### Problems:
 - [PairWithTargetSum](/src/main/java/arrays/twopointers/PairWithTargetSum.java)
+- [RemoveDuplicates](/src/main/java/arrays/twopointers/RemoveDuplicates.java)
 
 ## LeetCode
 
