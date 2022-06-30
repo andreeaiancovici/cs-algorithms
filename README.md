@@ -176,6 +176,15 @@ Cases when it may not be applicable:
 ##### LeetCode
 https://leetcode.com/problemset/all/?topicSlugs=sliding-window
 
+### Two Pointers
+
+Input:
+- sorted array
+- sorted linked list
+
+##### Problems:
+- [PairWithTargetSum](/src/main/java/arrays/twopointers/PairWithTargetSum.java)
+
 ## LeetCode
 
 https://leetcode.com/problem-list/top-interview-questions/ \
