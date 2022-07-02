@@ -191,6 +191,7 @@ Input:
 - [TripletSumToZero](/src/main/java/arrays/twopointers/TripletSumToZero.java)
 - [TripletSumCloseToTarget](/src/main/java/arrays/twopointers/TripletSumCloseToTarget.java)
 - [TripletsWithSmallerSum](/src/main/java/arrays/twopointers/TripletsWithSmallerSum.java)
+- [TripletsWithSmallerSumReturnList](/src/main/java/arrays/twopointers/TripletsWithSmallerSumReturnList.java)
 
 ##### LeetCode
 https://leetcode.com/problemset/all/?&topicSlugs=two-pointers \
