@@ -192,6 +192,7 @@ Input:
 - [TripletSumCloseToTarget](/src/main/java/arrays/twopointers/TripletSumCloseToTarget.java)
 - [TripletsWithSmallerSum](/src/main/java/arrays/twopointers/TripletsWithSmallerSum.java)
 - [TripletsWithSmallerSumReturnList](/src/main/java/arrays/twopointers/TripletsWithSmallerSumReturnList.java)
+- [SubArraysWithProductLessThanATarget](/src/main/java/arrays/twopointers/SubArraysWithProductLessThanATarget.java) -> Sliding Window technique also
 
 ##### LeetCode
 https://leetcode.com/problemset/all/?&topicSlugs=two-pointers \
