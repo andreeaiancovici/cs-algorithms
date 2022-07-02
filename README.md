@@ -174,7 +174,8 @@ Cases when it may not be applicable:
 - [TBD][WordsConcatenation](/src/main/java/arrays/slidingwindow/WordsConcatenation.java)
 
 ##### LeetCode
-https://leetcode.com/problemset/all/?topicSlugs=sliding-window
+https://leetcode.com/problemset/all/?topicSlugs=sliding-window \
+[TBD] - Medium + Hard
 
 ### Two Pointers
 
@@ -187,6 +188,12 @@ Input:
 - [RemoveDuplicates](/src/main/java/arrays/twopointers/RemoveDuplicates.java)
 - [RemoveAllKey](/src/main/java/arrays/twopointers/RemoveAllKey.java)
 - [SquaringASortedArray](/src/main/java/arrays/twopointers/SquaringASortedArray.java)
+- [TripletSumToZero](/src/main/java/arrays/twopointers/TripletSumToZero.java)
+- [TripletSumCloseToTarget](/src/main/java/arrays/twopointers/TripletSumCloseToTarget.java)
+
+##### LeetCode
+https://leetcode.com/problemset/all/?&topicSlugs=two-pointers \
+[TBD] - Easy + Medium + Hard
 
 ## LeetCode
 
