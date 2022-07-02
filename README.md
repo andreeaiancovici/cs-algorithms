@@ -190,6 +190,7 @@ Input:
 - [SquaringASortedArray](/src/main/java/arrays/twopointers/SquaringASortedArray.java)
 - [TripletSumToZero](/src/main/java/arrays/twopointers/TripletSumToZero.java)
 - [TripletSumCloseToTarget](/src/main/java/arrays/twopointers/TripletSumCloseToTarget.java)
+- [TripletsWithSmallerSum](/src/main/java/arrays/twopointers/TripletsWithSmallerSum.java)
 
 ##### LeetCode
 https://leetcode.com/problemset/all/?&topicSlugs=two-pointers \
