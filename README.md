@@ -193,6 +193,7 @@ Input:
 - [TripletsWithSmallerSum](/src/main/java/arrays/twopointers/TripletsWithSmallerSum.java)
 - [TripletsWithSmallerSumReturnList](/src/main/java/arrays/twopointers/TripletsWithSmallerSumReturnList.java)
 - [SubArraysWithProductLessThanATarget](/src/main/java/arrays/twopointers/SubArraysWithProductLessThanATarget.java) -> Sliding Window technique also
+- [DutchNationalFlagProblem](/src/main/java/arrays/twopointers/DutchNationalFlagProblem.java)
 
 ##### LeetCode
 https://leetcode.com/problemset/all/?&topicSlugs=two-pointers \
