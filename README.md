@@ -196,6 +196,7 @@ Input:
 - [DutchNationalFlagProblem](/src/main/java/arrays/twopointers/DutchNationalFlagProblem.java)
 - [QuadrupleSumToTarget](/src/main/java/arrays/twopointers/QuadrupleSumToTarget.java)
 - [ComparingStringsContainingBackspaces](/src/main/java/arrays/twopointers/ComparingStringsContainingBackspaces.java)
+- [MinimumWindowSort](/src/main/java/arrays/twopointers/MinimumWindowSort.java)
 
 ##### LeetCode
 https://leetcode.com/problemset/all/?&topicSlugs=two-pointers \
