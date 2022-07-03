@@ -195,6 +195,7 @@ Input:
 - [SubArraysWithProductLessThanATarget](/src/main/java/arrays/twopointers/SubArraysWithProductLessThanATarget.java) -> Sliding Window technique also
 - [DutchNationalFlagProblem](/src/main/java/arrays/twopointers/DutchNationalFlagProblem.java)
 - [QuadrupleSumToTarget](/src/main/java/arrays/twopointers/QuadrupleSumToTarget.java)
+- [ComparingStringsContainingBackspaces](/src/main/java/arrays/twopointers/ComparingStringsContainingBackspaces.java)
 
 ##### LeetCode
 https://leetcode.com/problemset/all/?&topicSlugs=two-pointers \
