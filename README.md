@@ -183,6 +183,10 @@ Input:
 - sorted array
 - sorted linked list
 
+Patterns:
+- find n elements to fulfill a property (e.g. their sum equals target)
+- in-place sorting
+
 ##### Problems:
 - [PairWithTargetSum](/src/main/java/arrays/twopointers/PairWithTargetSum.java)
 - [RemoveDuplicates](/src/main/java/arrays/twopointers/RemoveDuplicates.java)
