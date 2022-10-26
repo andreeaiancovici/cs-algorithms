@@ -210,15 +210,11 @@ Patterns:
 https://leetcode.com/problemset/all/?&topicSlugs=two-pointers \
 [TBD] - Medium + Hard
 
-## LeetCode
-
-https://leetcode.com/problem-list/top-interview-questions/ \
-https://seanprashad.com/leetcode-patterns/
-
 ### Fast & Slow Pointers
 
 Input:
-- list with cycle
+- linked list with cycle
+- an array designated to have a cycle
 
 _Floyd's Cycle-Finding algorithm_
 Finds an infinite cycle in a linked list, or a type problem which asks for cycle detection.
@@ -230,7 +226,6 @@ Patterns:
 - find entry point of cycle
 - find middle of linked list
 
-
 ##### Problems:
 - [LinkedListCycle](/src/main/java/arrays/fastslowpointers/LinkedListCycle.java)
 - [LengthOfLinkedListCycle](/src/main/java/arrays/fastslowpointers/LengthOfLinkedListCycle.java)
@@ -240,3 +235,8 @@ Patterns:
 - [PalindromeLinkedList](/src/main/java/arrays/fastslowpointers/PalindromeLinkedList.java)
 - [RearrangeALinkedList](/src/main/java/arrays/fastslowpointers/RearrangeALinkedList.java)
 - [TBD][CycleInACircularArray](/src/main/java/arrays/fastslowpointers/CycleInACircularArray.java)
+
+## LeetCode
+
+https://leetcode.com/problem-list/top-interview-questions/ \
+https://seanprashad.com/leetcode-patterns/
