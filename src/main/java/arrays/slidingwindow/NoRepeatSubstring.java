@@ -10,9 +10,6 @@ import static org.junit.Assert.assertEquals;
  * Question:
  * Given a string, find the length of the longest substring which has no repeating characters.
  * ---
- * Solution:
- * Sliding Window
- * ---
  * Time Complexity: O(n)
  * Space Complexity: O(1), only 26 english characters
  */

@@ -17,9 +17,6 @@ import static org.junit.Assert.assertEquals;
  * you will stop when you have to pick from a third fruit type.
  * Write a function to return the maximum number of fruits in both the baskets.
  * ---
- * Solution:
- * Sliding Window
- * ---
  * Time Complexity: O(n)
  * Space Complexity: O(k), where k = distinct fruits
  */

@@ -10,9 +10,6 @@ import static org.junit.Assert.assertEquals;
  * Given an array containing 0s and 1s, if you are allowed to replace no more than K 0s with 1s,
  * find the length of the longest contiguous sub-array having all 1s.
  * ---
- * Solution:
- * Sliding Window
- * ---
  * Time Complexity: O(n)
  * Space Complexity: O(1)
  */

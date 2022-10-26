@@ -12,9 +12,6 @@ import static org.junit.Assert.assertEquals;
  * Given an array of unsorted numbers and a target number,
  * find all unique quadruplets in it, whose sum is equal to the target number.
  * ---
- * Solution:
- * Two Pointers
- * ---
  * Time Complexity: O(n * log(n) + n^3) -> O(n^3)
  * Space Complexity: O(n)
  */

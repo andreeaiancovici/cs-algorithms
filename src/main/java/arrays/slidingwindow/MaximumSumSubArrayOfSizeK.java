@@ -10,9 +10,6 @@ import static org.junit.Assert.assertEquals;
  * Given an array of positive numbers and a positive number k,
  * find the maximum sum of any contiguous sub-array of size k.
  * ---
- * Solution:
- * Sliding Window
- * ---
  * Time Complexity: O(n)
  * Space Complexity: O(1)
  */

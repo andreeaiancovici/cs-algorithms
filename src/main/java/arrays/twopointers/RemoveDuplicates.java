@@ -10,9 +10,6 @@ import static org.junit.Assert.assertEquals;
  * Given an array of sorted numbers, remove all duplicates from it.
  * You should not use any extra space; after removing the duplicates in-place return the new length of the array.
  * ---
- * Solution:
- * Two Pointers
- * ---
  * Time Complexity: O(n)
  * Space Complexity: O(1)
  */

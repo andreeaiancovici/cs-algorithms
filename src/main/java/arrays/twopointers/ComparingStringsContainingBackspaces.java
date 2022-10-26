@@ -6,8 +6,6 @@ import static org.junit.Assert.*;
  * Question:
  * Given two strings containing backspaces (identified by the character ‘#’), check if the two strings are equal.
  * ---
- * Solution:
- * ---
  * Time Complexity: O(n + m)
  * Space Complexity: O(1)
  */

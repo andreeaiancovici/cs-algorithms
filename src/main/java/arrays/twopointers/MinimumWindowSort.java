@@ -9,9 +9,6 @@ import static org.junit.Assert.*;
  * Question:
  * Given an array, find the length of the smallest sub-array in it which when sorted will sort the whole array.
  * ---
- * Solution:
- * Two Pointers
- * ---
  * Time Complexity: O(n)
  * Space Complexity: O(1)
  */

@@ -8,9 +8,6 @@ import static org.junit.Assert.*;
  * Question:
  * Given a string and a pattern, find out if the string contains any permutation of the pattern.
  * ---
- * Solution:
- * Sliding Window
- * ---
  * Time Complexity: O(N + M), where N is the size of input string and M is the size of pattern
  * Space Complexity: O(K), where K is the number of distinct characters in pattern
  */

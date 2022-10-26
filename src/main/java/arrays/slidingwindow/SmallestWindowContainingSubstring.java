@@ -9,9 +9,6 @@ import static org.junit.Assert.assertEquals;
  * Given a string and a pattern, find the smallest substring in the given string
  * which has all the characters of the given pattern.
  * ---
- * Solution:
- * Sliding Window
- * ---
  * Time Complexity: O(n)
  * Space Complexity: O(1)
  */

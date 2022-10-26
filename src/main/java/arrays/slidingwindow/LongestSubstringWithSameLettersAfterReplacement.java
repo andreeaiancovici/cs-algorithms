@@ -10,9 +10,6 @@ import static org.junit.Assert.assertEquals;
  * Given a string with lowercase letters only, if you are allowed to replace no more than K letters with any letter,
  * find the length of the longest substring having the same letters after replacement.
  * ---
- * Solution:
- * Sliding Window
- * ---
  * Time Complexity: O(n)
  * Space Complexity: O(1), only 26 english characters
  */

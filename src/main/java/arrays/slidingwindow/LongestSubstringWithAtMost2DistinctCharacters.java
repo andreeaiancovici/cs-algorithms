@@ -9,9 +9,6 @@ import static org.junit.Assert.assertEquals;
  * Question:
  * Given a string, find the length of the longest substring in it with at most two distinct characters.
  * ---
- * Solution:
- * Sliding Window
- * ---
  * Time Complexity: O(n)
  * Space Complexity: O(k), k = distinct characters
  */

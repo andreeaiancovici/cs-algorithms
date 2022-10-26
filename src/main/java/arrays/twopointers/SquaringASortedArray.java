@@ -12,9 +12,6 @@ import static org.junit.Assert.assertEquals;
  * Given a sorted array, create a new array containing squares of all the number
  * of the input array in the sorted order.
  * ---
- * Solution:
- * Two Pointers
- * ---
  * Time Complexity: O(n)
  * Space Complexity: O(n)
  */

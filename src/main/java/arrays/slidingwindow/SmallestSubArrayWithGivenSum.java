@@ -11,9 +11,6 @@ import static org.junit.Assert.assertEquals;
  * find the length of the smallest contiguous sub-array whose sum is greater than or equal to S.
  * Return 0, if no such sub-array exists.
  * ---
- * Solution:
- * Sliding Window
- * ---
  * Time Complexity: O(n)
  * Space Complexity: O(1)
  */

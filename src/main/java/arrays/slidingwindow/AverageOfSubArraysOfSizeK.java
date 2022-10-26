@@ -10,9 +10,6 @@ import static org.junit.Assert.assertEquals;
  * Question:
  * Given an array, find the average of all contiguous sub-arrays of size k in it.
  * ---
- * Solution:
- * Sliding Window
- * ---
  * Time Complexity: O(n)
  * Space Complexity: O(1)
  */

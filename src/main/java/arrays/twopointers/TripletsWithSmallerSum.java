@@ -12,9 +12,6 @@ import static org.junit.Assert.assertEquals;
  * arr[i] + arr[j] + arr[k] < target where i, j, and k are three different indices.
  * Write a function to return the count of such triplets.
  * ---
- * Solution:
- * Two Pointers
- * ---
  * Time Complexity: O(n * log(n) + n^2) -> O(n^2)
  * Space Complexity: O(n)
  */

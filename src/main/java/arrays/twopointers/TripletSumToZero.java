@@ -11,9 +11,6 @@ import static org.junit.Assert.assertTrue;
  * Question:
  * Given an array of unsorted numbers, find all unique triplets in it that add up to zero.
  * ---
- * Solution:
- * Two Pointers
- * ---
  * Time Complexity: O(n * log(n) + n^2) -> O(n^2)
  * Space Complexity: O(n)
  */

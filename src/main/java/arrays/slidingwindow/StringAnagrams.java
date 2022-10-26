@@ -9,9 +9,6 @@ import static org.junit.Assert.*;
  * Given a string and a pattern, find all anagrams of the pattern in the given string.
  * Write a function to return a list of starting indices of the anagrams of the pattern in the given string.
  * ---
- * Solution:
- * Sliding Window
- * ---
  * Time Complexity: O(N + M), where N is the size of input string and M is the size of pattern
  * Space Complexity: O(K), where K is the number of distinct characters in pattern
  */

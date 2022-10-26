@@ -10,9 +10,6 @@ import static org.junit.Assert.assertEquals;
  * Given an unsorted array of numbers and a target ‘key’,
  * remove all instances of ‘key’ in-place and return the new length of the array.
  * ---
- * Solution:
- * Two Pointers
- * ---
  * Time Complexity: O(n)
  * Space Complexity: O(1)
  */

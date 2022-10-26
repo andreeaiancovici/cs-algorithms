@@ -12,9 +12,6 @@ import static org.junit.Assert.assertTrue;
  * Write a function to return the list of all such triplets instead of the count.
  * How will the time complexity change in this case?
  * ---
- * Solution:
- * Two Pointers
- * ---
  * Time Complexity: O(n * log(n) + n^3) -> O(n^3)
  * Space Complexity: O(n)
  */

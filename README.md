@@ -185,7 +185,11 @@ Input:
 
 Patterns:
 - find n elements to fulfill a property (e.g. their sum equals target)
+- palindrome
+- compare 2 strings  
 - in-place sorting
+- in-place elements removal
+- in-place reverse
 
 ##### Problems:
 - [PairWithTargetSum](/src/main/java/arrays/twopointers/PairWithTargetSum.java)
@@ -204,9 +208,35 @@ Patterns:
 
 ##### LeetCode
 https://leetcode.com/problemset/all/?&topicSlugs=two-pointers \
-[TBD] - Easy + Medium + Hard
+[TBD] - Medium + Hard
 
 ## LeetCode
 
 https://leetcode.com/problem-list/top-interview-questions/ \
 https://seanprashad.com/leetcode-patterns/
+
+### Fast & Slow Pointers
+
+Input:
+- list with cycle
+
+_Floyd's Cycle-Finding algorithm_
+Finds an infinite cycle in a linked list, or a type problem which asks for cycle detection.
+Uses 2 pointers, which iterate by one and two steps. At some point, if there is a cycle, the 2 pointers will meet.
+
+Patterns:
+- detect a cycle
+- find size of a cycle
+- find entry point of cycle
+- find middle of linked list
+
+
+##### Problems:
+- [LinkedListCycle](/src/main/java/arrays/fastslowpointers/LinkedListCycle.java)
+- [LengthOfLinkedListCycle](/src/main/java/arrays/fastslowpointers/LengthOfLinkedListCycle.java)
+- [StartOfLinkedListCycle](/src/main/java/arrays/fastslowpointers/StartOfLinkedListCycle.java)
+- [HappyNumber](/src/main/java/arrays/fastslowpointers/HappyNumber.java)
+- [MiddleOfLinkedList](/src/main/java/arrays/fastslowpointers/MiddleOfLinkedList.java)
+- [PalindromeLinkedList](/src/main/java/arrays/fastslowpointers/PalindromeLinkedList.java)
+- [RearrangeALinkedList](/src/main/java/arrays/fastslowpointers/RearrangeALinkedList.java)
+- [TBD][CycleInACircularArray](/src/main/java/arrays/fastslowpointers/CycleInACircularArray.java)
