@@ -1,6 +1,6 @@
-package arrays.fastslowpointers;
+package linkedlist.fastslowpointers;
 
-import helper.list.ListNode;
+import helper.linkedlist.ListNode;
 
 import java.util.Arrays;
 import java.util.List;
@@ -19,6 +19,7 @@ import static org.junit.Assert.assertEquals;
  * Space Complexity: O(1)
  */
 public class RearrangeALinkedList {
+
     public static void main(String[] args) {
         ListNode head1 = new ListNode(2);
         head1.next = new ListNode(4);
@@ -45,7 +46,7 @@ public class RearrangeALinkedList {
     private static void assertEqualsForTest(List<Integer> expected, ListNode head) {
         ListNode node = head;
         int i = 0;
-        while(node != null) {
+        while (node != null) {
             assertEquals(expected.get(i).intValue(), node.value);
             node = node.next;
             i++;
@@ -53,7 +54,7 @@ public class RearrangeALinkedList {
     }
 
     private static void rearrange(ListNode head) {
-        if(head == null || head.next == null) return;
+        if (head == null || head.next == null) return;
 
         ListNode middle = getMiddleNode(head);
 
@@ -61,7 +62,7 @@ public class RearrangeALinkedList {
         ListNode nodeReversedRightHalf = getReversedRightHalfList(middle);
         ListNode nodeLeftHalf = head;
 
-        while(nodeLeftHalf != null && nodeReversedRightHalf != null) {
+        while (nodeLeftHalf != null && nodeReversedRightHalf != null) {
             ListNode next = nodeLeftHalf.next;
             nodeLeftHalf.next = nodeReversedRightHalf;
             nodeLeftHalf = next;
@@ -71,13 +72,13 @@ public class RearrangeALinkedList {
             nodeReversedRightHalf = next;
         }
 
-        if(nodeLeftHalf != null) nodeLeftHalf.next = null;
+        if (nodeLeftHalf != null) nodeLeftHalf.next = null;
     }
 
     private static ListNode getMiddleNode(ListNode head) {
         ListNode slow = head, fast = head;
 
-        while(fast != null && fast.next != null) {
+        while (fast != null && fast.next != null) {
             slow = slow.next;
             fast = fast.next.next;
         }
@@ -88,7 +89,7 @@ public class RearrangeALinkedList {
     private static ListNode getReversedRightHalfList(ListNode head) {
         ListNode prev = null;
 
-        while(head != null) {
+        while (head != null) {
             ListNode next = head.next;
             head.next = prev;
             prev = head;

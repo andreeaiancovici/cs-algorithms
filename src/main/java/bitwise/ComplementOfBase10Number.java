@@ -27,7 +27,7 @@ public class ComplementOfBase10Number {
     }
 
     private static int complementOfBase10Number(int n) {
-        if(n == 0) {
+        if (n == 0) {
             return 1;
         }
 

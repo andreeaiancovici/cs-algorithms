@@ -1,4 +1,4 @@
-package helper.list;
+package helper.linkedlist;
 
 public class ListNode {
     public final int value;

@@ -1,6 +1,28 @@
 # CS Algorithms Cheat Sheet
 
+- [Bitwise operations](#bitwise-operations)
+  - [Operators](#operators)
+  - [Truth table](#truth-table)
+  - [Shifting](#shifting)
+  - [Tips & Tricks](#tips--tricks)
+  - [Computing a number using bit positions](#computing-a-number-using-bit-positions)
+  - [Convert Integer into Hexadecimal](#convert-integer-into-hexadecimal)
+  - [Two's Complement](#twos-complement)
+  - [XOR](#xor)
+- [Arrays](#arrays)
+  - [Sliding Window](#sliding-window)
+  - [Two Pointers](#two-pointers)
+  - [Fast & Slow Pointers (also check linked list section)](#fast--slow-pointers-also-check-linked-list-section)
+  - [Merge Intervals](#merge-intervals)
+- [Linked Lists](#linked-lists)
+  - [Fast & Slow Pointers](#fast--slow-pointers)
+- [Algorithms](#algorithms)
+  - [Floyd's Cycle-Finding algorithm](#floyds-cycle-finding-algorithm)
+  
+---
+
 ## Bitwise operations
+
 ### Operators
 ```
 AND                   &
@@ -67,7 +89,7 @@ The following example shows how you can use `|` operator to compute a number in 
 x = (1 << 4) | (1 << 3) | (1 << 2) | 1
 ```
 
-### Convert Integer to Hexadecimal
+### Convert Integer into Hexadecimal
 ```
 char[] hexMap = new char[]{'0','1','2','3','4','5','6','7','8','9','a','b','c','d','e','f'};
 
@@ -102,9 +124,9 @@ When this is changed to a decimal number, note that 4 + 2 = 6 which is the answe
 A register of size N will be able to represent decimal integers between -2^(N-1) and +2^(N-1).  
 **To-do**: Update after finishing `Computer systems; A programmer's perspective`
 
-### Problem solving patterns
+---
 
-#### XOR
+### XOR
 - returns zero if we take XOR of two same numbers; 
 - returns the same number if we XOR with zero.
 
@@ -119,7 +141,11 @@ A register of size N will be able to represent decimal integers between -2^(N-1)
 https://leetcode.com/problemset/all/?topicSlugs=bit-manipulation \
 https://leetcode.com/problemset/all/?topicSlugs=bitmask
 
+---
+
 ## Arrays
+
+---
 
 ### Sliding Window
 
@@ -177,6 +203,8 @@ Cases when it may not be applicable:
 https://leetcode.com/problemset/all/?topicSlugs=sliding-window \
 [TBD] - Medium + Hard
 
+---
+
 ### Two Pointers
 
 Input:
@@ -210,15 +238,48 @@ Patterns:
 https://leetcode.com/problemset/all/?&topicSlugs=two-pointers \
 [TBD] - Medium + Hard
 
+---
+
+### Fast & Slow Pointers (also check linked list section)
+
+Input:
+- an array designated to have a cycle
+
+[Floyd's Cycle-Finding algorithm](#floyds-cycle-finding-algorithm)
+
+Patterns:
+- detect a cycle
+
+##### Problems:
+- [HappyNumber](/src/main/java/arrays/fastslowpointers/HappyNumber.java)
+- [TBD][CycleInACircularArray](/src/main/java/arrays/fastslowpointers/CycleInACircularArray.java)
+
+---
+
+### Merge Intervals
+
+##### Problems:
+- [MergeIntervals](/src/main/java/arrays/mergeintervals/MergeIntervals.java)
+- [CheckOverlappingIntervals](/src/main/java/arrays/mergeintervals/CheckOverlappingIntervals.java)
+- [InsertInterval](/src/main/java/arrays/mergeintervals/InsertInterval.java)
+
+## LeetCode
+
+https://leetcode.com/problem-list/top-interview-questions/ \
+https://seanprashad.com/leetcode-patterns/
+
+---
+
+## Linked Lists
+
+---
+
 ### Fast & Slow Pointers
 
 Input:
 - linked list with cycle
-- an array designated to have a cycle
 
-_Floyd's Cycle-Finding algorithm_
-Finds an infinite cycle in a linked list, or a type problem which asks for cycle detection.
-Uses 2 pointers, which iterate by one and two steps. At some point, if there is a cycle, the 2 pointers will meet.
+[Floyd's Cycle-Finding algorithm](#floyds-cycle-finding-algorithm)
 
 Patterns:
 - detect a cycle
@@ -226,17 +287,26 @@ Patterns:
 - find entry point of cycle
 - find middle of linked list
 
+```
+ListNode slow = head, fast = head;
+while(fast != null && fast.next != null) {
+  slow = slow.next;
+  fast = fast.next.next;
+}
+```
+
 ##### Problems:
-- [LinkedListCycle](/src/main/java/arrays/fastslowpointers/LinkedListCycle.java)
-- [LengthOfLinkedListCycle](/src/main/java/arrays/fastslowpointers/LengthOfLinkedListCycle.java)
-- [StartOfLinkedListCycle](/src/main/java/arrays/fastslowpointers/StartOfLinkedListCycle.java)
-- [HappyNumber](/src/main/java/arrays/fastslowpointers/HappyNumber.java)
-- [MiddleOfLinkedList](/src/main/java/arrays/fastslowpointers/MiddleOfLinkedList.java)
-- [PalindromeLinkedList](/src/main/java/arrays/fastslowpointers/PalindromeLinkedList.java)
-- [RearrangeALinkedList](/src/main/java/arrays/fastslowpointers/RearrangeALinkedList.java)
-- [TBD][CycleInACircularArray](/src/main/java/arrays/fastslowpointers/CycleInACircularArray.java)
+- [LinkedListCycle](/src/main/java/linkedlist/fastslowpointers/LinkedListCycle.java)
+- [LengthOfLinkedListCycle](/src/main/java/linkedlist/fastslowpointers/LengthOfLinkedListCycle.java)
+- [StartOfLinkedListCycle](/src/main/java/linkedlist/fastslowpointers/StartOfLinkedListCycle.java)
+- [MiddleOfLinkedList](/src/main/java/linkedlist/fastslowpointers/MiddleOfLinkedList.java)
+- [PalindromeLinkedList](/src/main/java/linkedlist/fastslowpointers/PalindromeLinkedList.java)
+- [RearrangeALinkedList](/src/main/java/linkedlist/fastslowpointers/RearrangeALinkedList.java)
 
-## LeetCode
+---
 
-https://leetcode.com/problem-list/top-interview-questions/ \
-https://seanprashad.com/leetcode-patterns/
+## Algorithms
+
+### Floyd's Cycle-Finding algorithm
+Finds an infinite cycle in a linked list, or a type problem which asks for cycle detection. \
+Uses 2 pointers, which iterate by one and two steps. At some point, if there is a cycle, the 2 pointers will meet.

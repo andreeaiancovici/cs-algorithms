@@ -1,6 +1,6 @@
-package arrays.fastslowpointers;
+package linkedlist.fastslowpointers;
 
-import helper.list.ListNode;
+import helper.linkedlist.ListNode;
 
 import static org.junit.Assert.assertEquals;
 
@@ -13,6 +13,7 @@ import static org.junit.Assert.assertEquals;
  * Space Complexity: O(1)
  */
 public class MiddleOfLinkedList {
+
     public static void main(String[] args) {
         ListNode head = new ListNode(1);
         head.next = new ListNode(2);
@@ -34,7 +35,7 @@ public class MiddleOfLinkedList {
     private static ListNode getMiddleNode(ListNode head) {
         ListNode slow = head, fast = head;
 
-        while(fast != null && fast.next != null) {
+        while (fast != null && fast.next != null) {
             slow = slow.next;
             fast = fast.next.next;
         }

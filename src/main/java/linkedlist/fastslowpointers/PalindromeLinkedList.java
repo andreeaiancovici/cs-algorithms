@@ -1,6 +1,6 @@
-package arrays.fastslowpointers;
+package linkedlist.fastslowpointers;
 
-import helper.list.ListNode;
+import helper.linkedlist.ListNode;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
@@ -16,6 +16,7 @@ import static org.junit.Assert.assertTrue;
  * Space Complexity: O(1)
  */
 public class PalindromeLinkedList {
+
     public static void main(String[] args) {
         ListNode head = new ListNode(2);
         head.next = new ListNode(4);
@@ -32,7 +33,7 @@ public class PalindromeLinkedList {
 
     private static boolean isPalindrome(ListNode head) {
         ListNode slow = head, fast = head;
-        while(fast != null && fast.next != null) {
+        while (fast != null && fast.next != null) {
             slow = slow.next;
             fast = fast.next.next;
         }
@@ -41,8 +42,8 @@ public class PalindromeLinkedList {
         ListNode node1 = getReversedLinkedList(slow.next);
         ListNode nodeKeptForReversing = node1;
         ListNode node2 = head;
-        while(node1 != null && node2 != null) {
-            if(node1.value != node2.value) return false;
+        while (node1 != null && node2 != null) {
+            if (node1.value != node2.value) return false;
 
             node1 = node1.next;
             node2 = node2.next;
@@ -56,7 +57,7 @@ public class PalindromeLinkedList {
     private static ListNode getReversedLinkedList(ListNode head) {
         ListNode node = head, prev = null, temp;
 
-        while(node != null) {
+        while (node != null) {
             temp = node.next;
             node.next = prev;
             prev = node;

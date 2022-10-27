@@ -1,6 +1,6 @@
-package arrays.fastslowpointers;
+package linkedlist.fastslowpointers;
 
-import helper.list.ListNode;
+import helper.linkedlist.ListNode;
 
 import static org.junit.Assert.*;
 
@@ -12,6 +12,7 @@ import static org.junit.Assert.*;
  * Space Complexity: O(1)
  */
 public class LengthOfLinkedListCycle {
+
     public static void main(String[] args) {
         ListNode head = new ListNode(1);
         head.next = new ListNode(2);
@@ -32,20 +33,20 @@ public class LengthOfLinkedListCycle {
     private static int getCycleLength(ListNode head) {
         ListNode slow = head, fast = head;
 
-        while(slow != null && fast != null && fast.next != null) {
+        while (slow != null && fast != null && fast.next != null) {
             slow = slow.next;
             fast = fast.next.next;
 
-            if(slow == fast) break;
+            if (slow == fast) break;
         }
 
         int count = 0;
-        if(slow != null && slow == fast) {
+        if (slow != null && slow == fast) {
             ListNode temp = slow;
             do {
                 count++;
                 temp = temp.next;
-            } while(temp != slow);
+            } while (temp != slow);
         }
 
         return count;
