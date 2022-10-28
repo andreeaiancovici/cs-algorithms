@@ -11,7 +11,6 @@ import static org.junit.Assert.assertArrayEquals;
  * Time Complexity: O(n)
  * Space Complexity: O(n)
  */
-
 public class InsertInterval {
 
     public static void main(String[] args) {

@@ -145,8 +145,6 @@ https://leetcode.com/problemset/all/?topicSlugs=bitmask
 
 ## Arrays
 
----
-
 ### Sliding Window
 
 Input:
@@ -262,17 +260,15 @@ Patterns:
 - [MergeIntervals](/src/main/java/arrays/mergeintervals/MergeIntervals.java)
 - [CheckOverlappingIntervals](/src/main/java/arrays/mergeintervals/CheckOverlappingIntervals.java)
 - [InsertInterval](/src/main/java/arrays/mergeintervals/InsertInterval.java)
-
-## LeetCode
-
-https://leetcode.com/problem-list/top-interview-questions/ \
-https://seanprashad.com/leetcode-patterns/
+- [IntervalsIntersection](/src/main/java/arrays/mergeintervals/IntervalsIntersection.java)
+- [ConflictingAppointments](/src/main/java/arrays/mergeintervals/ConflictingAppointments.java)
+- [TBD][MinimumMeetingRooms](/src/main/java/arrays/mergeintervals/MinimumMeetingRooms.java)
+- [TBD][MaximumCPULoad](/src/main/java/arrays/mergeintervals/MaximumCPULoad.java)
+- [TBD][EmployeeFreeTime](/src/main/java/arrays/mergeintervals/EmployeeFreeTime.java)
 
 ---
 
 ## Linked Lists
-
----
 
 ### Fast & Slow Pointers
 
@@ -302,6 +298,13 @@ while(fast != null && fast.next != null) {
 - [MiddleOfLinkedList](/src/main/java/linkedlist/fastslowpointers/MiddleOfLinkedList.java)
 - [PalindromeLinkedList](/src/main/java/linkedlist/fastslowpointers/PalindromeLinkedList.java)
 - [RearrangeALinkedList](/src/main/java/linkedlist/fastslowpointers/RearrangeALinkedList.java)
+
+---
+
+## LeetCode
+
+https://leetcode.com/problem-list/top-interview-questions/ \
+https://seanprashad.com/leetcode-patterns/
 
 ---
 
