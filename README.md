@@ -16,6 +16,7 @@
   - [Merge Intervals](#merge-intervals)
 - [Linked Lists](#linked-lists)
   - [Fast & Slow Pointers](#fast--slow-pointers)
+- [Binary Search](#binary-search)
 - [Algorithms](#algorithms)
   - [Floyd's Cycle-Finding algorithm](#floyds-cycle-finding-algorithm)
   
@@ -292,12 +293,90 @@ while(fast != null && fast.next != null) {
 ```
 
 ##### Problems:
+
 - [LinkedListCycle](/src/main/java/linkedlist/fastslowpointers/LinkedListCycle.java)
 - [LengthOfLinkedListCycle](/src/main/java/linkedlist/fastslowpointers/LengthOfLinkedListCycle.java)
 - [StartOfLinkedListCycle](/src/main/java/linkedlist/fastslowpointers/StartOfLinkedListCycle.java)
 - [MiddleOfLinkedList](/src/main/java/linkedlist/fastslowpointers/MiddleOfLinkedList.java)
 - [PalindromeLinkedList](/src/main/java/linkedlist/fastslowpointers/PalindromeLinkedList.java)
 - [RearrangeALinkedList](/src/main/java/linkedlist/fastslowpointers/RearrangeALinkedList.java)
+
+---
+
+## Binary Search
+
+**Time Complexity:** O(log(n))
+
+**Space Complexity:** O(1)
+
+**How to recognize:**
+
+- given input already sorted array
+- given input is an array which can be transformed in a sorted array by applying prefix sum
+- given scenario where we have to test all discrete values in an interval
+- given input is a sorted matrix
+
+**Templates:**
+Find leftmost value which evaluates condition to TRUE (condition = function giving results in the following form
+FFFFFTTTTT)
+
+```
+int binarySearch(int[] nums, int target){
+  int left = 0, right = nums.length - 1;
+  while (left < right){
+    int mid = (right - left) / 2 + left;
+
+    if (target <= nums[mid]) right = mid;
+    else left = mid + 1;
+  }
+
+  // check if left evaluates condition to TRUE
+  if (target <= nums[left]) return left;
+
+  return -1;
+}
+```
+
+Find rightmost value which evaluates condition to TRUE (condition = function giving results in the following form
+TTTTTFFFFF)
+
+```
+int binarySearch(int[] nums, int target) {
+  int left = 0, right = nums.length - 1;
+  while (left < right){
+    int mid = (right - left + 1) / 2 + left;
+
+    if (target <= nums[mid) left = mid;
+    else right = mid - 1;
+  }
+
+  // check if left evaluates condition to TRUE
+  if (target <= nums[left]) return left;
+	
+  return -1;
+}
+```
+
+### Problems:
+
+- [OrderAgnosticBinarySearch](/src/main/java/binarysearch/OrderAgnosticBinarySearch.java)
+- [CeilingOfANumber](/src/main/java/binarysearch/CeilingOfANumber.java)
+- [FloorOfANumber](/src/main/java/binarysearch/FloorOfANumber.java)
+- [NextLetter](/src/main/java/binarysearch/NextLetter.java)
+- [NumberRange](/src/main/java/binarysearch/NumberRange.java)
+- [SearchInASortedInfiniteArray](/src/main/java/binarysearch/SearchInASortedInfiniteArray.java)
+- [MinimumDifferenceElement](/src/main/java/binarysearch/MinimumDifferenceElement.java)
+- [BitonicArrayMaximum](/src/main/java/binarysearch/BitonicArrayMaximum.java)
+- [SearchBitonicArray](/src/main/java/binarysearch/SearchBitonicArray.java)
+- [SearchInRotatedArray](/src/main/java/binarysearch/SearchInRotatedArray.java)
+- [SearchInRotatedArrayWithDuplicates](/src/main/java/binarysearch/SearchInRotatedArrayWithDuplicates.java)
+- [RotationCount](/src/main/java/binarysearch/RotationCount.java)
+- [RotationCountWithDuplicates](/src/main/java/binarysearch/RotationCountWithDuplicates.java)
+
+### LeetCode
+
+https://leetcode.com/problemset/all/?topicSlugs=binary-search \
+[TBD] - Hard
 
 ---
 
