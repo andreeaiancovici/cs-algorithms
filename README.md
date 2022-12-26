@@ -316,7 +316,7 @@ while(fast != null && fast.next != null) {
 - given scenario where we have to test all discrete values in an interval
 - given input is a sorted matrix
 
-**Templates:**
+**Templates:** \
 Find leftmost value which evaluates condition to TRUE (condition = function giving results in the following form
 FFFFFTTTTT)
 
