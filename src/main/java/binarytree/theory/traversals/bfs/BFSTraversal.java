@@ -1,4 +1,4 @@
-package binarytree.bfs.traversals;
+package binarytree.theory.traversals.bfs;
 
 import helper.tree.binarytree.TreeBuilder;
 import helper.tree.binarytree.TreeNode;
@@ -9,6 +9,9 @@ import java.util.Deque;
 
 /**
  * Level order traversal
+ * ---
+ * Time Complexity: O(n)
+ * Space Complexity: O(m), where m is the maximum size of a level
  */
 public class BFSTraversal {
 
@@ -29,7 +32,6 @@ public class BFSTraversal {
                 node = queue.poll();
 
                 System.out.print(node.value + " ");
-
 
                 if (node.left != null) queue.add(node.left);
                 if (node.right != null) queue.add(node.right);
