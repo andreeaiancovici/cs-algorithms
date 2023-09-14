@@ -82,6 +82,10 @@ x >> 1
 // Multiply by 2
 x << 1
 
+// Interesting aspects of XORing
+x ^ x == 0
+x ^ y != 0, where x != y
+
 // Flip bit
 x = 1 -> x ^ 1 = 0
 x = 0 -> x ^ 1 = 1
@@ -237,19 +241,21 @@ RULES:
 
 ### Bit operations Algorithms
 
-XOR properties:
-
-- if x == x -> x ^ x == 0
-- if x != y -> x ^ y != 0
-- if x == 1 -> x ^ 1 == 0
-- if x == 0 -> x ^ 0 == 1
+Finding missing / duplicate number(s) are usually solved using XOR properties.\
+We can also include additional sum computation (Gauss sum) or XORing intervals (from 1 to n).
 
 - Remove duplicates from array using **x ^ x =
   0** ([Find a single number](/src/main/java/bitoperations/SingleNumber.java))
 - Split array into 2 subgroups where **x ^ y != 0** bit is
   different ([Find two single numbers](/src/main/java/bitoperations/TwoSingleNumbers.java))
+
+Bitmasks are very useful for computing memoization state when n is small.
+
 - Using bitmask in dynamic programming
   memoization ([Beautiful Arrangement](/src/main/java/bitoperations/BeautifulArrangement.java))
+
+Finding the complement of a number can be computed using XOR.
+
 - Extracting complement of a
   number ([ComplementOfBase10Number](/src/main/java/bitoperations/ComplementOfBase10Number.java))
 
