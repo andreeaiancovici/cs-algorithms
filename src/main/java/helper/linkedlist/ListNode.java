@@ -12,4 +12,15 @@ public class ListNode {
         this.value = value;
         this.next = next;
     }
+
+    public void print() {
+        print(this);
+    }
+
+    private void print(ListNode node) {
+        while (node != null) {
+            System.out.print(node.value + " ");
+            node = node.next;
+        }
+    }
 }
